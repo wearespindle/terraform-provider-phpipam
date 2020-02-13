@@ -2,6 +2,7 @@ package phpipam
 
 import (
 	"log"
+	"sync"
 
 	"github.com/lord-kyron/phpipam-sdk-go/controllers/addresses"
 	"github.com/lord-kyron/phpipam-sdk-go/controllers/sections"
@@ -46,6 +47,9 @@ type ProviderPHPIPAMClient struct {
 
 	// The client for the vlans controller.
 	vlansController *vlans.Controller
+
+	// Mutex for free IP address allocation.
+	addressAllocationLock sync.Mutex
 }
 
 // Client configures and returns a fully initialized PingdomClient.
