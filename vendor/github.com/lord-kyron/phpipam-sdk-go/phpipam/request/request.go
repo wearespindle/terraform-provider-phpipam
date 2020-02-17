@@ -25,7 +25,9 @@ type APIResponse struct {
 	Message string
 
 	// Whether or not the API request was successful.
-	Success bool
+	// In phpIPAM 1.3.x this is an integer
+	// In phpIPAM 1.4.x it's a bool
+	Success interface{}
 }
 
 // Request represents the API request.
@@ -67,6 +69,14 @@ func (r *requestResponse) BodyString() string {
 	return buf.String()
 }
 
+func (r* APIResponse) IsSuccess() bool {
+	if res, ok := r.Success.(bool); ok {
+		return res
+	} else {
+		return r.Success.(float64) != 0
+	}
+}
+
 // readResponseJSON reads a "successful" response body as JSON into variable
 // pointed to by v.
 //
@@ -80,7 +90,7 @@ func (r *requestResponse) ReadResponseJSON(v interface{}) error {
 		return fmt.Errorf("JSON parsing error: %s - Response body: %s", err, r.Body)
 	}
 
-	if !resp.Success {
+	if !resp.IsSuccess() {
 		return r.handleError()
 	}
 
