@@ -4,8 +4,8 @@ import (
 	"strconv"
 
 	"github.com/hashicorp/terraform/helper/schema"
-	"github.com/lord-kyron/phpipam-sdk-go/controllers/sections"
-	"github.com/lord-kyron/phpipam-sdk-go/phpipam"
+	"github.com/pavel-z1/phpipam-sdk-go/controllers/sections"
+	"github.com/pavel-z1/phpipam-sdk-go/phpipam"
 )
 
 // resourceSectionOptionalFields represents all the fields that are optional in

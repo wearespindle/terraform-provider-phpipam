@@ -4,12 +4,12 @@ import (
 	"log"
 	"sync"
 
-	"github.com/lord-kyron/phpipam-sdk-go/controllers/addresses"
-	"github.com/lord-kyron/phpipam-sdk-go/controllers/sections"
-	"github.com/lord-kyron/phpipam-sdk-go/controllers/subnets"
-	"github.com/lord-kyron/phpipam-sdk-go/controllers/vlans"
-	"github.com/lord-kyron/phpipam-sdk-go/phpipam"
-	"github.com/lord-kyron/phpipam-sdk-go/phpipam/session"
+	"github.com/pavel-z1/phpipam-sdk-go/controllers/addresses"
+	"github.com/pavel-z1/phpipam-sdk-go/controllers/sections"
+	"github.com/pavel-z1/phpipam-sdk-go/controllers/subnets"
+	"github.com/pavel-z1/phpipam-sdk-go/controllers/vlans"
+	"github.com/pavel-z1/phpipam-sdk-go/phpipam"
+	"github.com/pavel-z1/phpipam-sdk-go/phpipam/session"
 )
 
 // Config provides the configuration for the PHPIPAM provider.
