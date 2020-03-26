@@ -6,8 +6,8 @@ import (
 	"strconv"
 
 	"github.com/hashicorp/terraform/helper/schema"
-	"github.com/pavel-z1/phpipam-sdk-go/controllers/subnets"
-	"github.com/pavel-z1/phpipam-sdk-go/phpipam"
+	"github.com/wearespindle/phpipam-sdk-go/controllers/subnets"
+	"github.com/wearespindle/phpipam-sdk-go/phpipam"
 )
 
 // resourceSubnetOptionalFields represents all the fields that are optional in

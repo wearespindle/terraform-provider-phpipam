@@ -5,5 +5,5 @@ go 1.14
 require (
 	github.com/hashicorp/terraform v0.12.24
 	github.com/imdario/mergo v0.3.8 // indirect
-	github.com/pavel-z1/phpipam-sdk-go v0.0.0-20200313084222-d0ff3300814c
+	github.com/wearespindle/phpipam-sdk-go v0.0.0-20200326131600-c7efa83646b2
 )

@@ -4,7 +4,7 @@ import (
 	"errors"
 
 	"github.com/hashicorp/terraform/helper/schema"
-	"github.com/pavel-z1/phpipam-sdk-go/controllers/sections"
+	"github.com/wearespindle/phpipam-sdk-go/controllers/sections"
 )
 
 func dataSourcePHPIPAMSection() *schema.Resource {

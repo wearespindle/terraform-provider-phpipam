@@ -6,9 +6,9 @@ import (
 	"regexp"
 
 	"github.com/hashicorp/terraform/helper/schema"
-	"github.com/pavel-z1/phpipam-sdk-go/controllers/addresses"
-	"github.com/pavel-z1/phpipam-sdk-go/controllers/subnets"
-	"github.com/pavel-z1/phpipam-sdk-go/controllers/vlans"
+	"github.com/wearespindle/phpipam-sdk-go/controllers/addresses"
+	"github.com/wearespindle/phpipam-sdk-go/controllers/subnets"
+	"github.com/wearespindle/phpipam-sdk-go/controllers/vlans"
 )
 
 // customFieldFilterSchema returns a *schema.Schema for the custom_field_filter

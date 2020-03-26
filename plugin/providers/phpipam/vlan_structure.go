@@ -4,7 +4,7 @@ import (
 	"strconv"
 
 	"github.com/hashicorp/terraform/helper/schema"
-	"github.com/pavel-z1/phpipam-sdk-go/controllers/vlans"
+	"github.com/wearespindle/phpipam-sdk-go/controllers/vlans"
 )
 
 // resourceVLANOptionalFields represents all the fields that are optional in
